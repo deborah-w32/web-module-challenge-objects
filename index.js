@@ -53,9 +53,16 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 
 /* Task 4: Console.log just Julius' feedback */
 
+console.log(reviews[5].feedback);
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
+function addReview(array, name, rating, feedback){
+  array.push({name, rating, feedback})
+  return array;
+}
+
+console.log(addReview(reviews, 'Deborah', 4, "4 stars for the truly delicious food and unimpeachable service, minus one star for the expensive biryani, and for turning me into a human flamethrower."));
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 
